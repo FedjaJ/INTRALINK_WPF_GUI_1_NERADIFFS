@@ -34,7 +34,7 @@ namespace INTRALINK_WPF_GUI_1
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {       // LOGIN CONDITION TREBA UBACIT PODATKE IZ BAZE UMJESTO BADZE
-                // ZAMJENIT PLACEHOLDER WRONG PASSWORD SCREEN I DODAT RETURN UMJESTO CLOSEA (Amer)
+                // ZAMJENIT PLACEHOLDER WRONG PASSWORD SCREEN I DODAT RETURN UMJESTO CLOSEA (Amer)rr
             if (UserName.Text == "admin" && PasswordField.Password == "admin")
             {
                 new AdminPanel().Show();
