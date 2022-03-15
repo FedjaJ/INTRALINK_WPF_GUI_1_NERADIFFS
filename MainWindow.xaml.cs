@@ -31,30 +31,26 @@ namespace INTRALINK_WPF_GUI_1
         {
             this.Close();
         }
-        // LOGIN CONDITION TREBA UBACIT PODATKE IZ BAZE UMJESTO BADZE
-        // ZAMJENIT PLACEHOLDER WRONG PASSWORD SCREEN I DODAT RETURN UMJESTO CLOSEA (Amer)
+
         private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            if(UserName.Text == "admin" && PasswordField.Password == "admin")
+        {       // LOGIN CONDITION TREBA UBACIT PODATKE IZ BAZE UMJESTO BADZE
+                // ZAMJENIT PLACEHOLDER WRONG PASSWORD SCREEN I DODAT RETURN UMJESTO CLOSEA (Amer)
+            if (UserName.Text == "admin" && PasswordField.Password == "admin")
             {
                 new AdminPanel().Show();
                 this.Hide();
             }
-            else if(UserName.Text == "badzo" && PasswordField.Password == "badzo123")
+            else
             {
                 new UserPanel().Show();
                 this.Hide();
             }
-            else
-            {
-                new WrongPassword().Show();
-                this.Hide();
-            }
+            
         }
 
         private void UserName_TextChanged(object sender, TextChangedEventArgs e)
         {
-            this.Close();
+           
         }
     }
 }
